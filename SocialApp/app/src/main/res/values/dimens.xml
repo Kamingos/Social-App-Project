@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="downPanelIcon">60dp</dimen>
+    <dimen name="downPanel_height">100dp</dimen>
+    <dimen name="topPanel_height">80dp</dimen>
+    <dimen name="app_name">50dp</dimen>
+</resources>

@@ -4,15 +4,79 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/gray0"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <ImageView
+        android:id="@+id/downPanel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/downPanel_height"
+        android:background="@color/gray1"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/topPanel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topPanel_height"
+        android:background="@color/gray1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="300sp"
+        android:layout_height="@dimen/topPanel_height"
+        android:gravity="center"
+        android:text="@string/app_name_"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:fontFamily="sans-serif-black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topPanel"
+        app:layout_constraintTop_toTopOf="@id/topPanel" />
+
+    <LinearLayout
+        android:id="@+id/linLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/downPanel"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topPanel" />
+
+    <ImageButton
+        android:id="@+id/btn1"
+        android:layout_width="@dimen/downPanelIcon"
+        android:layout_height="@dimen/downPanelIcon"
+        android:background="@color/gray2"
+        app:layout_constraintBottom_toBottomOf="@id/downPanel"
+        app:layout_constraintEnd_toStartOf="@id/btn2"
+        app:layout_constraintStart_toStartOf="@id/downPanel"
+        app:layout_constraintTop_toTopOf="@id/downPanel" />
+
+    <ImageButton
+        android:id="@+id/btn2"
+        android:layout_width="@dimen/downPanelIcon"
+        android:layout_height="@dimen/downPanelIcon"
+        android:background="@color/gray2"
+        app:layout_constraintBottom_toBottomOf="@id/downPanel"
+        app:layout_constraintEnd_toStartOf="@id/btn3"
+        app:layout_constraintStart_toEndOf="@id/btn1"
+        app:layout_constraintTop_toTopOf="@id/downPanel" />
+
+    <ImageButton
+        android:id="@+id/btn3"
+        android:layout_width="@dimen/downPanelIcon"
+        android:layout_height="@dimen/downPanelIcon"
+        android:background="@color/gray2"
+        app:layout_constraintBottom_toBottomOf="@id/downPanel"
+        app:layout_constraintEnd_toEndOf="@id/downPanel"
+        app:layout_constraintStart_toEndOf="@id/btn2"
+        app:layout_constraintTop_toTopOf="@id/downPanel" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
