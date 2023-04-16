@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">SocialApp</string>
     <string name="app_name_">Наше Дело</string>
+    <string name="profile">Профиль</string>
+    <string name="profile_name">Евгений Евгений Евгеньевич</string>
+    <string name="profile_type">Взрослый</string>
+    <string name="profile_id">ID: 12345</string>
+    <string name="add_new_item">Новый запрос</string>
+
 </resources>

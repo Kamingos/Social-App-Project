@@ -4,6 +4,78 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".add_new_item">
+    tools:context=".Add_new_item"
+    android:background="@color/main_1">
+
+
+    <ImageView
+        android:id="@+id/request_panel_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_panel_top_height"
+        android:background="@color/main_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/request_text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/add_new_item"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_title"
+        app:fontFamily="sans-serif-black"
+        app:layout_constraintBottom_toBottomOf="@id/request_panel_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/request_panel_top" />
+
+
+
+    <ImageView
+        android:id="@+id/request_panel_down"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_panel_down_height"
+        android:background="@color/main_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:onClick="onMyButtonClick"
+        android:id="@+id/request_btn1"
+        android:layout_width="@dimen/main_panel_down_ico"
+        android:layout_height="@dimen/main_panel_down_ico"
+        android:background="@drawable/button_corner_3"
+        android:src="@drawable/ic_home"
+        app:layout_constraintBottom_toBottomOf="@id/request_panel_down"
+        app:layout_constraintEnd_toStartOf="@id/request_btn2"
+        app:layout_constraintStart_toStartOf="@id/request_panel_down"
+        app:layout_constraintTop_toTopOf="@id/request_panel_down" />
+
+    <ImageButton
+        android:onClick="onMyButtonClick"
+        android:id="@+id/request_btn2"
+        android:layout_width="@dimen/main_panel_down_ico"
+        android:layout_height="@dimen/main_panel_down_ico"
+        android:src="@drawable/ic_add"
+        android:background="@drawable/button_corner_3"
+        app:layout_constraintBottom_toBottomOf="@id/request_panel_down"
+        app:layout_constraintEnd_toStartOf="@id/request_btn3"
+        app:layout_constraintStart_toEndOf="@id/request_btn1"
+        app:layout_constraintTop_toTopOf="@id/request_panel_down" />
+
+    <ImageButton
+        android:onClick="onMyButtonClick"
+        android:id="@+id/request_btn3"
+        android:layout_width="@dimen/main_panel_down_ico"
+        android:layout_height="@dimen/main_panel_down_ico"
+        android:src="@drawable/ic_profile"
+        android:background="@drawable/button_corner_3"
+        app:layout_constraintBottom_toBottomOf="@id/request_panel_down"
+        app:layout_constraintEnd_toEndOf="@id/request_panel_down"
+        app:layout_constraintStart_toEndOf="@id/request_btn2"
+        app:layout_constraintTop_toTopOf="@id/request_panel_down" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

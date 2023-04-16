@@ -4,79 +4,85 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/gray0"
+    android:background="@color/main_1"
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/downPanel"
+        android:id="@+id/main_panel_top"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/downPanel_height"
-        android:background="@color/gray1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/topPanel"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/topPanel_height"
-        android:background="@color/gray1"
+        android:layout_height="@dimen/main_panel_top_height"
+        android:background="@color/main_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:layout_width="300sp"
-        android:layout_height="@dimen/topPanel_height"
+        android:id="@+id/main_text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/app_name_"
         android:textColor="@color/white"
-        android:textSize="50sp"
+        android:textSize="@dimen/text_title"
         app:fontFamily="sans-serif-black"
+        app:layout_constraintBottom_toBottomOf="@id/main_panel_top"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/topPanel"
-        app:layout_constraintTop_toTopOf="@id/topPanel" />
+        app:layout_constraintTop_toTopOf="@id/main_panel_top" />
 
     <LinearLayout
-        android:id="@+id/linLayout"
+        android:id="@+id/main_linLayout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@id/downPanel"
+        app:layout_constraintBottom_toTopOf="@id/main_panel_down"
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/topPanel" />
+        app:layout_constraintTop_toBottomOf="@id/main_panel_top" />
+
+    <ImageView
+        android:id="@+id/main_panel_down"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_panel_down_height"
+        android:background="@color/main_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
-        android:id="@+id/btn1"
-        android:layout_width="@dimen/downPanelIcon"
-        android:layout_height="@dimen/downPanelIcon"
-        android:background="@color/gray2"
-        app:layout_constraintBottom_toBottomOf="@id/downPanel"
-        app:layout_constraintEnd_toStartOf="@id/btn2"
-        app:layout_constraintStart_toStartOf="@id/downPanel"
-        app:layout_constraintTop_toTopOf="@id/downPanel" />
+        android:onClick="onMyButtonClick"
+        android:id="@+id/main_btn1"
+        android:layout_width="@dimen/main_panel_down_ico"
+        android:layout_height="@dimen/main_panel_down_ico"
+        android:src="@drawable/ic_home"
+        android:background="@drawable/button_corner_3"
+        app:layout_constraintBottom_toBottomOf="@id/main_panel_down"
+        app:layout_constraintEnd_toStartOf="@id/main_btn2"
+        app:layout_constraintStart_toStartOf="@id/main_panel_down"
+        app:layout_constraintTop_toTopOf="@id/main_panel_down" />
 
     <ImageButton
-        android:id="@+id/btn2"
-        android:layout_width="@dimen/downPanelIcon"
-        android:layout_height="@dimen/downPanelIcon"
-        android:background="@color/gray2"
-        app:layout_constraintBottom_toBottomOf="@id/downPanel"
-        app:layout_constraintEnd_toStartOf="@id/btn3"
-        app:layout_constraintStart_toEndOf="@id/btn1"
-        app:layout_constraintTop_toTopOf="@id/downPanel" />
-
+        android:onClick="onMyButtonClick"
+        android:id="@+id/main_btn2"
+        android:layout_width="@dimen/main_panel_down_ico"
+        android:layout_height="@dimen/main_panel_down_ico"
+        android:src="@drawable/ic_add"
+        android:background="@drawable/button_corner_3"
+        app:layout_constraintBottom_toBottomOf="@id/main_panel_down"
+        app:layout_constraintEnd_toStartOf="@id/main_btn3"
+        app:layout_constraintStart_toEndOf="@id/main_btn1"
+        app:layout_constraintTop_toTopOf="@id/main_panel_down" />
     <ImageButton
-        android:id="@+id/btn3"
-        android:layout_width="@dimen/downPanelIcon"
-        android:layout_height="@dimen/downPanelIcon"
-        android:background="@color/gray2"
-        app:layout_constraintBottom_toBottomOf="@id/downPanel"
-        app:layout_constraintEnd_toEndOf="@id/downPanel"
-        app:layout_constraintStart_toEndOf="@id/btn2"
-        app:layout_constraintTop_toTopOf="@id/downPanel" />
+        android:onClick="onMyButtonClick"
+        android:id="@+id/main_btn3"
+        android:layout_width="@dimen/main_panel_down_ico"
+        android:layout_height="@dimen/main_panel_down_ico"
+        android:src="@drawable/ic_profile"
+        android:background="@drawable/button_corner_3"
+        app:layout_constraintBottom_toBottomOf="@id/main_panel_down"
+        app:layout_constraintEnd_toEndOf="@id/main_panel_down"
+        app:layout_constraintStart_toEndOf="@id/main_btn2"
+        app:layout_constraintTop_toTopOf="@id/main_panel_down" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
