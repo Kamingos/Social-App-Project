@@ -10,7 +10,7 @@
     <ImageView
         android:id="@+id/profile_panel_top"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/main_panel_top_height"
+        android:layout_height="@dimen/panel_top_height"
         android:background="@color/main_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -111,7 +111,7 @@
     <ImageView
         android:id="@+id/profile_panel_down"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/main_panel_down_height"
+        android:layout_height="@dimen/panel_down_height"
         android:background="@color/main_2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -120,8 +120,8 @@
     <ImageButton
         android:onClick="onMyButtonClick"
         android:id="@+id/profile_btn1"
-        android:layout_width="@dimen/main_panel_down_ico"
-        android:layout_height="@dimen/main_panel_down_ico"
+        android:layout_width="@dimen/panel_down_ico"
+        android:layout_height="@dimen/panel_down_ico"
         android:src="@drawable/ic_home"
         android:background="@drawable/button_corner_3"
         app:layout_constraintBottom_toBottomOf="@id/profile_panel_down"
@@ -132,8 +132,8 @@
     <ImageButton
         android:onClick="onMyButtonClick"
         android:id="@+id/profile_btn2"
-        android:layout_width="@dimen/main_panel_down_ico"
-        android:layout_height="@dimen/main_panel_down_ico"
+        android:layout_width="@dimen/panel_down_ico"
+        android:layout_height="@dimen/panel_down_ico"
         android:src="@drawable/ic_add"
         android:background="@drawable/button_corner_3"
         app:layout_constraintBottom_toBottomOf="@id/profile_panel_down"
@@ -144,9 +144,9 @@
     <ImageButton
         android:onClick="onMyButtonClick"
         android:id="@+id/profile_btn3"
-        android:layout_width="@dimen/main_panel_down_ico"
-        android:layout_height="@dimen/main_panel_down_ico"
-        android:src="@drawable/ic_profile"
+        android:layout_width="@dimen/panel_down_ico"
+        android:layout_height="@dimen/panel_down_ico"
+        android:src="@drawable/ic_person"
         android:background="@drawable/button_corner_3"
         app:layout_constraintBottom_toBottomOf="@id/profile_panel_down"
         app:layout_constraintEnd_toEndOf="@id/profile_panel_down"

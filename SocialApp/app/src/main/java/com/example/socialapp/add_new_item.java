@@ -20,12 +20,13 @@ public class Add_new_item extends AppCompatActivity {
             Intent intent;
             intent = new Intent(this, MainActivity.class);
             startActivity(intent);
-
+            overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_left);
         }
         if (view.getId() == R.id.request_btn3) {
             Intent intent;
             intent = new Intent(this, Personal_profile.class);
             startActivity(intent);
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
         }
 
     }

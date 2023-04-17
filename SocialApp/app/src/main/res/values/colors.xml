@@ -14,4 +14,8 @@
     <color name="gray_2">#BEBEBE</color>
     <color name="gray_3">#828282</color>
 
+    <color  name="blue_1">#0077FF</color>
+    <color  name="blue_2">#005CF8</color>
+    <color  name="blue_3">#0048BA</color>
+
 </resources>

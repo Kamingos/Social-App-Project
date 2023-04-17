@@ -15,12 +15,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Init();
-
     }
 
-    private void Init() {
-    }
 
     public void onMyButtonClick(View view) {
         // выводим сообщение
@@ -29,11 +25,13 @@ public class MainActivity extends AppCompatActivity {
             Intent intent;
             intent = new Intent(this, Add_new_item.class);
             startActivity(intent);
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
         }
         if (view.getId() == R.id.main_btn3) {
             Intent intent;
             intent = new Intent(this, Personal_profile.class);
             startActivity(intent);
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
         }
 
     }
